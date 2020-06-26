@@ -1,0 +1,74 @@
+/* config var */
+:root {
+    --slider-width: 100%;
+    --slider-height: 500px;
+    --slider-total-time: 30s;
+}
+.css-slider {
+    width: 100%;
+    height: 500px;
+}
+.slider-wrapper,.slider-wrapper ul,
+.slider-wrapper li,.slider-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+.slider-wrapper ul {
+    position: relative;
+}
+.slider-wrapper li {
+    position: absolute;
+    top: 0;
+}
+.slider-wrapper img {
+    object-fit: cover;
+}
+.css-slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.slider-wrapper .img01 {
+    opacity: 0;
+    -webkit-animation: slide var(--slider-total-time) ease-in-out 0s infinite normal forwards;
+    animation: slide var(--slider-total-time) ease-in-out 0s infinite normal forwards;
+}
+.slider-wrapper .img02 {
+    opacity: 0;
+    -webkit-animation: slide var(--slider-total-time) ease-in-out -6s infinite normal forwards;
+    animation: slide var(--slider-total-time) ease-in-out -6s infinite normal forwards;
+}
+.slider-wrapper .img03 {
+    opacity: 0;
+    -webkit-animation: slide var(--slider-total-time) ease-in-out -12s infinite normal forwards;
+    animation: slide var(--slider-total-time) ease-in-out -12s infinite normal forwards;
+}
+.slider-wrapper .img04 {
+    opacity: 0;
+    -webkit-animation: slide var(--slider-total-time) ease-in-out -18s infinite normal forwards;
+    animation: slide var(--slider-total-time) ease-in-out -18s infinite normal forwards;
+}
+.slider-wrapper .img05 {
+    opacity: 0;
+    -webkit-animation: slide var(--slider-total-time) ease-in-out -24s infinite normal forwards;
+    animation: slide var(--slider-total-time) ease-in-out -24s infinite normal forwards;
+}
