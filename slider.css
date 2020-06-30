@@ -1,9 +1,9 @@
 /* config var */
 :root {
-    --slider-width: 100%; /* スライダーの横幅 */
-    --slider-height: 500px; /* スライダーの高さ */
-    --slider-total-time: 30s; /* スライダーの一周の間隔 */
-    --slider-total-page: 5; /* スライダーの枚数 */
+    --slider-width: 100%;       /* スライダーの横幅 */
+    --slider-height: 500px;     /* スライダーの高さ */
+    --slider-total-time: 30s;   /* スライダーの一周の間隔 */
+    --slider-total-page: 5;     /* スライダーの枚数 */
     --slider-per-seconds: calc(var(--slider-total-time) / var(--slider-total-page));
 }
 .css-slider {
